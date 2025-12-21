@@ -67,3 +67,7 @@ nav ul li a{
 .topHeadlines .left .text{
     padding: 20px 15px 10px; /* kcach ndung voi anh, tren=20, trai-phai=15, duoi=10*/
 }
+.topHeadlines .left .text .title h2{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
