@@ -52,7 +52,7 @@ nav ul li a{
 }
 .topHeadlines .left{
     padding: 10px 30px; /*khoach cach tren-duoi:10, trai-phai:30*/
-    background-color: darkgray;
+    /*background-color: darkgray; */
 }
 .topHeadlines .left > .title{
     font-size: 20px; /*font tiede*/
@@ -69,5 +69,53 @@ nav ul li a{
 }
 .topHeadlines .left .text .title h2{
     font-size: 20px;
-    letter-spacing: 1px;
+    letter-spacing: 1px; /*khoach cach giua cac chu*/
+    display: inline;
+    cursor: pointer; /* khi re chuot chon tro se tro thanh ban tay*/
+}
+.topHeadlines .left .text .title h2:hover{
+    text-decoration: underline; /*gạch chân dong trong the h2*/
+}
+.topHeadlines .left .text .description{
+    font-size: 15px;
+    margin-top: 10px;/*khoach cach ben ngoai voi dong tren*/
+    color:darkgrey;
+    letter-spacing: 1px;    
+}
+.topHeadlines .right{
+    padding: 10px;    
+    width: 1005;/****taisaokcopx****/
+    height: 500px;
+    /*background-color:darkgrey;*/
+}
+.topHeadlines .right > .title h2{
+    font-size: 20px; /*font tiede*/
+    padding: 15px; /*kcach ben trong cho tieude trenduoitraiphai 15*/
+    text-align: center;/*can giua theo chieu ngang*/
+}
+.topHeadlines .right .topNews{
+    padding: 7px;
+    height :85%;
+    border: 1px solid white; /*tao vien co do day 1px*/
+    border-radius: 4px; /*bo tron goc, px cang to -> goc bo tron cang lon*/
+}
+.topHeadlines .right .topNews .news{
+    display:grid;
+    grid-template-columns: auto auto; 
+    align-items: center;       
+}
+.topHeadlines .right .topNews .news .img{
+    width: 170px;
+    height: 120px;
+    background-color:brown;
+}
+.topHeadlines .right .topNews .news .text{
+    margin-left: 10px;
+    width: 100%; 
+}
+.topHeadlines .right .topNews .news .text .title{
+    cursor: pointer;
+}
+.topHeadlines .right .topNews .news .text .title:hover{
+    text-decoration: underline;
 }
