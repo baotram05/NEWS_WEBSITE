@@ -28,6 +28,7 @@ body{
 }
 
 
+
 .header{
     position: fixed; /*cố định phần new và menu khi cuộn xuống k bị khuất*/
     display: flex; 
@@ -35,6 +36,7 @@ body{
     align-items: center;/*căn giữa các ptu theo chiều dọc*/
     width: 100%; 
     padding: 20px 50px;
+    background-color: black;
 }
 .logo{
     font-size: 45px;
@@ -137,4 +139,21 @@ nav ul li a{
 }
 .topHeadlines .right .topNews .news .text .title:hover{
     text-decoration: underline;/*gach chan chu*/
+}
+.page2{
+    width: 100%;
+    background-color:dimgrey;
+    min-height: 100vh; /*chiều cao ngang bằng màn hình*/
+    padding: 50px;
+}
+.page2 .news{
+    padding: 30px 0;    
+}
+.page2 .news > .title h2{
+    font-size: 40px;
+    cursor: pointer;
+    display: inline;
+}
+.page2 .news > .title h2:hover{
+    text-decoration: underline;
 }
