@@ -11,18 +11,35 @@ body{
     min-height: 100vh; /* nhu tren*/
     color:white;
 }
+
+::-webkit-scrollbar{ /*áp dụng cho toàn trang thanh cuộn cao-rộng 8px*//*độ dày của thanh cuộn*/
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+    padding: 2px;
+}
+::-webkit-scrollbar-thumb{/*áp dụng cho nút cuộn*/
+    background-color: darkgray;
+    border-radius: 100px;/*kích thước bo tròn mạnh*/
+}
+.topHeadlines .right .topNews::-webkit-scrollbar{ 
+    width: 6px; /*srollbar của topnews có độ rộng=6*/
+}
+
+
 .header{
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: fixed; /*cố định phần new và menu khi cuộn xuống k bị khuất*/
+    display: flex; 
+    justify-content: space-between;/*giãn đều các phần tử theo chiều ngang*/
+    align-items: center;/*căn giữa các ptu theo chiều dọc*/
     width: 100%; 
     padding: 20px 50px;
 }
 .logo{
     font-size: 45px;
     font-weight: 700;
-    cursor: pointer;
+    cursor: pointer; /*khi rê chuột, con trỏ có hình bàn tay*/
 }
 nav ul{
     display: flex; /* bien thanh menu home, sports,.. thanh 1 dong ngang*/
@@ -102,7 +119,7 @@ nav ul li a{
 }
 .topHeadlines .right .topNews .news{
     display:grid;
-    grid-template-columns: auto auto; /*chia bang topheadlines thanh 2 cot*/
+    grid-template-columns: auto auto; /*chia bang topheadlines thanh 2 cot. auto là trình duyệt tự tính và chia*/
     align-items: center; /*can giua theo chieu doc*/    
     margin-bottom: 20px;/*tao khoach cach voi phan tu(cac khung bao) o duoi*/
 }
